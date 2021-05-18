@@ -1,0 +1,62 @@
+[
+    {
+        "name" : "The C Programming Language",
+        "price" : "38",
+        "image" : "THE C Programming Language.jpg",
+        "type" : "language"
+    },
+    {
+        "name" : "C++ in One Hour a Day",
+        "price" : "30",
+        "image" : "C++ in One Hour a Day.jpg",
+        "type" : "language"
+    },
+    {
+        "name" : "Learning Python",
+        "price" : "33",
+        "image" : "Learning Python.jpg",
+        "type" : "language"
+    },
+    {
+        "name" : "Operating System Concepts",
+        "price" : "34",
+        "image" : "Operating System Concepts.jpg",
+        "type" : "OS"
+    },
+    {
+        "name" : "Linux Bible",
+        "price" : "31",
+        "image" : "Linux Bible.jpg",
+        "type" : "OS"
+    },
+    {
+        "name" : "The Linux Command Line",
+        "price" : "23",
+        "image" : "The Linux Command Line.jpg",
+        "type" : "OS"
+    },
+    {
+        "name" : "HTML and CSS",
+        "price" : "19",
+        "image" : "HTML and CSS.jpg",
+        "type" : "internet"
+    },
+    {
+        "name" : "Head First HTML and CSS",
+        "price" : "32",
+        "image" : "Head First HTML and CSS.jpg",
+        "type" : "internet"
+    },
+    {
+        "name" : "Eloquent JavaScript",
+        "price" : "23",
+        "image" : "Eloquent JavaScript.jpg",
+        "type" : "internet"
+    },
+    {
+        "name" : "Head First JavaScript Programming",
+        "price" : "32",
+        "image" : "Head First JavaScript Programming.jpg",
+        "type" : "internet"
+    }
+]
