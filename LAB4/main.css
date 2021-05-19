@@ -1,0 +1,59 @@
+
+html    { width: 1020px;
+          margin: 0 auto;
+        }
+body    { background-color: rgb(233, 223, 223);
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 30px; }
+
+h1      { text-align: center;
+          color: blue; }
+
+h2      {
+    font-size : 30px;
+    position: relative;
+    animation-name: headerAnimation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes headerAnimation { 
+    0% { left: 1020px;}
+    25% { left: 765px;}
+    50% { left: 510px;}
+    75% { left: 255px;}
+    100% { left: 0px;}
+}
+
+div.a     { margin: 10px 10px 10px 10px;
+          padding: 5px;
+          border: 3px solid red;
+          width: 10%;
+          height: 40px;
+          display: inline; 
+        }
+
+div.b   {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+}
+img     {
+    transition: transform 2s;
+}
+/*
+img:hover {
+    transform-origin: 0 0;
+    transform: scale(2,2);
+}
+*/
+p.a {
+    column-count: 2;
+    column-gap: 25px;
+    column-rule-width: 3px;
+    column-rule-style: outset;
+    column-rule-color: violet;
+}
