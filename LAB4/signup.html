@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LAB4 signup</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+    </head>
+    <body>
+        <h1>Welcome to the INTERNET-PROGRAMMING SHOP</h1>
+        <div class="a"><a href = "https://2013147539.github.io/HomeworkRepository/LAB4/login.html">로그인</a></div>
+        <div class='a'><a href = "https://2013147539.github.io/HomeworkRepository/LAB4/index.html">메인페이지</a></div>
+        <p>회원가입 개인정보 (필수)</p>
+        <form>
+            <p>
+                <label>이름:<input name = "user name" type = "text" autofocus /></label>
+            </p>
+            <p>
+                <label>생일:<input name = "birthday" type = "date" /></label>
+            </p>
+            <p>
+                <label>학년:<input name = "grade" type = "number" min = "1" max = "8" step = "1" required/></label>
+            </p>
+            <p>
+                <label>전화번호:<input name = "phone number" type = "tel" placeholder = "(###) ###-####"
+                    pattern = "\(\d{3}\) +\d{3}-\d{4}" /></label>
+            </p>
+            <p>
+                <label>유저 아이디:<input name = "user id" type = "text" autocomplete = "on" /></label>
+            </p>
+            <p>
+                <label>비밀번호:<input name = "user password" type = "password" placeholder = " 비밀번호를 입력해주세요." /></label>
+            </p>
+            <p>
+                <input type = "submit" value = "Signup" />
+                <input type = "reset" value = "Clear" />
+            </p>
+        </form>
+    </body>
+</html>
