@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LAB4 main page</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+        <script>
+            var i = 0;
+            var k = 0;
+            fetch("https://2013147539.github.io/HomeworkRepository/LAB4/product.json")
+            .then(response => {
+                return response.json()
+            })
+            .then(data => {
+                console.log(data);
+                for (i = 0 ; i < 4 ; i++) {
+                    load(data[i]);
+                }
+                var interval = setInterval(function () {
+                    if(window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                        load(data[i]);
+                        i++;
+                    }
+                    if(i>=10) { clearInterval(interval); }
+                }, 1000)
+/*
+                for (var i in data) {
+                    load(data[i]);
+                }
+*/
+            })         
+            .catch(error => console.log("fetch error"));
+
+
+            
+            var j = 0;
+            function load(product) {
+
+
+                const name = document.createElement("div");
+                const price = document.createElement("div");
+                const image = document.createElement("img");
+                const type = document.createElement("div");
+                name.textContent = product.name;
+                price.textContent = product.price;
+                type.textContent = product.type;
+                image.src = product.image;
+                image.width = 200;
+                image.height = 200;
+                image.alt = product.name;
+                image.addEventListener("click", () => {
+                    alert("책의 이름은 " + product.name + " 이고\n" + "책의 종류는 " + product.type + " 입니다.\n" + "가격은 " + product.price + "$ 입니다.");
+                })
+                
+
+                var products = document.createElement("div");
+
+
+
+                document.body.appendChild(products);
+                products.id = "id"+j++;
+
+
+                products.appendChild(name);
+                products.appendChild(price);
+                products.appendChild(type);
+                products.appendChild(image); 
+            
+
+                /*
+                document.body.appendChild(products);
+                products.id = "id"+j++;
+
+
+
+                products.appendChild(name);
+                products.appendChild(price);
+                products.appendChild(type);
+
+                products.appendChild(image); 
+                */
+            }
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+        <h2>안녕하세요 마켓컬리입니다.</h2>
+        <div class="a"><a href = "https://2013147539.github.io/HomeworkRepository/LAB4/index.html">메인페이지</a></div>
+        <div class="a"><a href = "https://2013147539.github.io/HomeworkRepository/LAB4/login.html">로그인</a></div>
+        <div class="a"><a href = "https://2013147539.github.io/HomeworkRepository/LAB4/signup.html">회원가입</a></div>
+        <br>
+        <br>
+        <h1>Book</h1>
+        <h3>이미지 클릭시 팝업</h3>
+
+    </body>
+</html>
